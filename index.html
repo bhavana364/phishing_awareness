@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Spot the Phish: Phishing Awareness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav aria-label="Sections"><a href="#learn">What is it</a><a href="#types">Types</a><a href="#url">Fake sites</a><a
+            href="#quiz">Quiz</a><a href="#tips">Stay safe</a></nav>
+    <main>
+        <section id="top">
+            <h1>Can you spot the phish?</h1>
+            <p>Phishing is when a scammer pretends to be someone you trust to steal your passwords, money, or data.
+                Below is a fake email. Tap the underlined parts to see why each one is a warning sign.</p>
+            <div class="card mail" role="group" aria-label="Sample phishing email">
+                <div class="bar">
+                    <div class="row">From: <button class="flag"
+                            data-n="The display name says PayPal, but the real address is a random domain. Always check the address, not just the name.">PayPal
+                            Support &lt;help@paypa1-secure.co&gt;</button></div>
+                    <div class="row">Subject: <button class="flag"
+                            data-n="Urgent subjects push you to act before you think.">URGENT: Account suspended in 24
+                            hours!</button></div>
+                </div>
+                <div class="body">
+                    <p><button class="flag"
+                            data-n="Real companies usually use your name. Generic greetings suggest a mass email.">Dear
+                            Customer,</button></p>
+                    <p>We noticed <button class="flag"
+                            data-n="Vague, scary claims with no details are a classic trick.">unusual activity</button>
+                        on your account. <button class="flag"
+                            data-n="Threats and deadlines create panic. Legit companies give you time and other ways to verify.">Failure
+                            to verify now will result in permanent closure.</button></p>
+                    <span class="fake-btn"><button class="flag" style="color:#fff;border-bottom-color:#fff"
+                            data-n="The button’s real link goes somewhere else. On a computer, hover to see it. On a phone, press and hold the link.">Verify
+                            My Account</button></span>
+                    <p style="margin:0">Thanks, <button class="flag"
+                            data-n="Spelling and grammar slips are common, though some phishing emails are written perfectly.">Paypal
+                            Securty Team</button></p>
+                </div>
+            </div>
+            <div id="note" aria-live="polite">Tap a red underline to see why it’s suspicious.</div>
+            <div id="count"></div>
+        </section>
+
+        <section id="learn">
+            <h2>What phishing really is</h2>
+            <p>Attackers donot break into computers first. They trick people. A message looks like it’s from your bank,
+                a delivery company, your boss, or a school, and asks you to click a link, open a file, or share a code.
+            </p>
+            <p>The goal is usually one of three things: steal a login, steal money, or install harmful software. The
+                trick works because it uses feelings: fear, urgency, curiosity, or greed. This is called <strong>social
+                    engineering</strong>.</p>
+        </section>
+
+        <section id="types">
+            <h2>Common types</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Email phishing</h3>
+                    <p>Mass emails posing as banks, shops, or services. Fake sender, urgent message, bad link.</p>
+                </div>
+                <div class="card">
+                    <h3>Spear phishing</h3>
+                    <p>Aimed at one person, using real details such as your name, job, or boss to look believable.</p>
+                </div>
+                <div class="card">
+                    <h3>Fake websites</h3>
+                    <p>Look-alike login pages with a slightly wrong address. Anything you type goes to the attacker.</p>
+                </div>
+                <div class="card">
+                    <h3>Smishing</h3>
+                    <p>Phishing by SMS: “Your parcel is held, pay a small fee here.”</p>
+                </div>
+                <div class="card">
+                    <h3>Vishing</h3>
+                    <p>Phishing by phone call, often a “bank officer” asking for your OTP or PIN.</p>
+                </div>
+                <div class="card">
+                    <h3>Fake job offers</h3>
+                    <p>Easy pay, no interview, then a request for a fee or your ID documents.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="url">
+            <h2>Real or fake website?</h2>
+            <p>Look at the address carefully. Judge each one.</p>
+            <div class="card" id="urlbox"></div>
+        </section>
+
+        <section id="quiz">
+            <h2>Test yourself</h2>
+            <div class="card">
+                <div class="prog"><i id="bar"></i></div>
+                <div id="qbox"></div>
+            </div>
+        </section>
+
+        <section id="tips">
+            <h2>How to stay safe</h2>
+            <ul class="tips">
+                <li><strong>Pause first.</strong> Urgency is the biggest warning sign.</li>
+                <li><strong>Check the sender’s address and the link’s real destination</strong> before clicking.</li>
+                <li><strong>Type the website address yourself</strong> or use your saved bookmark instead of email
+                    links.</li>
+                <li><strong>Never share OTPs, PINs, or passwords.</strong> Real companies don’t ask for them.</li>
+                <li><strong>Turn on two-factor authentication</strong> and use a password manager. It won’t fill in a
+                    fake site.</li>
+                <li><strong>Verify through another channel.</strong> Call the company using the number on its official
+                    site.</li>
+                <li><strong>If you clicked,</strong> change the password, tell your bank or IT team, and run a malware
+                    scan.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>Made for the CodeAlpha cyber security internship, Task 2: Phishing Awareness Training.</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
